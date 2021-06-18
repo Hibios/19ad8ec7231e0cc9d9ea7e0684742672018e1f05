@@ -21,7 +21,7 @@ python -m venv Venv
 Venv\Scripts\activate
 ```
 
-Затем установите python зависимсти для проекта:
+Затем установите python зависимсти для проекта, из каталога с файлом requirements.txt:
 ```diff
 pip install -r requirements.txt
 ```
