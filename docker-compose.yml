@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    container_name: 'postgresdb'
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      
+  rabbitmq:
+    image: rabbitmq:latest
+    container_name: 'rabbit_broker'
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    ports:
+      - "5672:5672"
+
+  redis:
+    image: redis:latest
+    restart: always
+    container_name: 'redis_backend'
+    ports:
+      - '6379:6379'
+      
+  highcharts:
+    image: onsdigital/highcharts-export-node:latest
+    container_name: 'highcharts'
+    ports:
+      - "8889:8080"
