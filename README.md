@@ -26,7 +26,7 @@ Venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-После установки, поднимитесь в каталог выше где находится docker-compose.yml файл и поднимите экосистему для проекта
+Из каталога с файлом docker-compose.yml поднимите экосистему для проекта
 (PostgreSQL, Highcharts, RabbitMQ, Redis):
 ```diff
 docker-compose up
