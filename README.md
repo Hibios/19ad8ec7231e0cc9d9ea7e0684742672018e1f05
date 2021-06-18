@@ -1,7 +1,15 @@
 # 19ad8ec7231e0cc9d9ea7e0684742672018e1f05
 Тестовое задание
 
+```diff
+- Внимание! Весь проект выполнялся на Windows 10
+```
+
+Используемый стек:
+python 3.7, Django, PostgreSQL, Redis, Celery, RabbitMQ, Highcharts, Docker
+```diff
 + Действия ниже будет легче выполнять через PyCharm
+```
 
 Сперва зайдите в папку с файлом manage.py и создайте там виртуальную среду с помощью:
 ```diff
